@@ -1,6 +1,15 @@
 # Metalsmith Site
 
-Metalsmith configuation for a static site with isolated pages. Each page can have it's own data, css, and javascript files.
+Metalsmith configuration for a static site with isolated pages. Each page can have it's own data, css, and javascript files.
+
+## Setup
+
+```sh
+git clone https://github.com/moudy/metalsmith-site
+cd metalsmith-site
+npm install
+npm run dev
+```
 
 ## Files and Folders
 
