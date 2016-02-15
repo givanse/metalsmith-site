@@ -6,7 +6,6 @@ import sass from 'metalsmith-sass';
 import autoprefixer from 'metalsmith-autoprefixer';
 import htmlMinifier from  'metalsmith-html-minifier';
 import rename from 'metalsmith-rename';
-//import inPlace from 'metalsmith-in-place';
 import filenames from 'metalsmith-filenames';
 import ignore from 'metalsmith-ignore';
 
@@ -41,7 +40,6 @@ site
   .use(filenames())
   .use(pageAssets())
   .use(template())
-  //.use(inPlace({engine: 'swig', partials: path.join(__dirname, 'src/templates')}))
   .use(rename([[/\.swig$/, '.html']]))
   ;
 
